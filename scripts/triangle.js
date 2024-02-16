@@ -52,7 +52,7 @@ function calculateParallelogramArea() {
   const height = getInputValueById('parallelogram-height');
   // console.log('height value', height);
 
-  // calculate rectangle area
+  // calculate Parallelogram area
   const area = base * height;
   console.log('area of the Parallelogram', area);
 
@@ -64,6 +64,29 @@ function getInputValueById(inputFieldId) {
   const inputValueText = inputField.value;
   const inputValue = parseFloat(inputValueText);
   // console.log(inputValue);
+  return inputValue;
+}
+
+function setInnerTextById(elementId, area) {
+  const element = document.getElementById(elementId);
+  element.innerText = area;
+}
+
+
+// Rhombus Area
+function calculateRhombusArea() {
+  const width = getInputValueById('rhombus-width')
+  const langth = getInputValueById('rhombus-langth');
+
+  // calculate Rhombus area
+  const area = 0.5 * width * langth;
+  setInnerTextById('rhombus-area', area);
+}
+
+function getInputValueById(inputFieldId) {
+  const inputField = document.getElementById(inputFieldId);
+  const inputValueText = inputField.value;
+  const inputValue = parseFloat(inputValueText);
   return inputValue;
 }
 

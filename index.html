@@ -128,18 +128,18 @@
           </figure>
           <div class="card-body">
             <h2 class="card-title">Ellipse</h2>
-            <p>Area (A) =3.1416 X ab</p>
+            <p>Area (A) = πab</p>
             <div class="">
-              <input class="w-20 p-2 text-2xl rounded-sm" id="ellipse-width" type="text" placeholder="a=10">
+              <input class="w-20 p-2 text-2xl rounded-sm" id="ellipse-major-radius" type="text" placeholder="a=10">
               <span class="mr-4 ml-2">cm,</span>
-              <input class="w-20 p-2 text-2xl rounded-sm" type="text" id="ellipse-langth" placeholder="b=4">
+              <input class="w-20 p-2 text-2xl rounded-sm" type="text" id="ellipse-minor-radius" placeholder="b=4">
               <span class="mr-4 ml-2">cm</span>
             </div>
             <div>
               <p class="text-2xl">Area: <span id="ellipse-area"> <span>0</span></span> <span>cm</span> <sup>2</sup></p>
             </div>
             <div class="card-actions justify-end">
-              <button class="btn btn-primary w-full">Calculate</button>
+              <button onclick="calculateEllipseArea()" class="btn btn-primary w-full">Calculate</button>
             </div>
           </div>
         </div>

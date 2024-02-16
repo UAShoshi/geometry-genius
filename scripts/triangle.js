@@ -94,3 +94,26 @@ function setInnerTextById(elementId, area) {
   const element = document.getElementById(elementId);
   element.innerText = area;
 }
+
+
+// pentagon Area
+function calculatePentagonArea() {
+  const perimeter = getInputValueById('pentagon-perimeter')
+  const base = getInputValueById('pentagon-base');
+
+  // calculate pentagon area
+  const area = 0.5 * perimeter * base;
+  setInnerTextById('pentagon-area', area);
+}
+
+function getInputValueById(inputFieldId) {
+  const inputField = document.getElementById(inputFieldId);
+  const inputValueText = inputField.value;
+  const inputValue = parseFloat(inputValueText);
+  return inputValue;
+}
+
+function setInnerTextById(elementId, area) {
+  const element = document.getElementById(elementId);
+  element.innerText = area;
+}
